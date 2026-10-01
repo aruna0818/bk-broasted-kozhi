@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fredoka:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap');
+
+:root {
+  --primary-red: #D90429;
+  --primary-darkred: #B91C1C;
+  --accent-yellow: #FFB703;
+  --accent-gold: #FB8500;
+  --bg-dark: #0F172A;
+  --bg-card: #1E293B;
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.font-tamil {
+  font-family: 'Noto Sans Tamil', 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #d90429;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb703;
+}
+
+/* Custom Glow & Neon effects */
+.glow-red {
+  box-shadow: 0 0 25px rgba(217, 4, 41, 0.45);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 20px rgba(255, 183, 3, 0.45);
+}
+
+.text-gradient-red-yellow {
+  background: linear-gradient(135deg, #FFB703 0%, #FB8500 40%, #D90429 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF 0%, #FFD166 60%, #FFB703 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-pattern {
+  background-color: #0d1322;
+  background-image: radial-gradient(rgba(255, 183, 3, 0.08) 1px, transparent 1px), radial-gradient(rgba(217, 4, 41, 0.08) 1px, #0d1322 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+/* Badge Pulse Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.6);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 6px rgba(217, 4, 41, 0.2);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Modal Transition */
+.drawer-backdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+.drawer-content {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

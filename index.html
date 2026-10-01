@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bk BROASTED KOZHI | Tondiarpet, Chennai - Crispy & Juicy Fried Chicken</title>
+  <meta name="description" content="Bk Broasted Kozhi - Grand Opening on 04/10/2026 at Tondiarpet, Chennai. Best crispy broasted chicken, juicy burgers, combos and wings. Order on WhatsApp: 8015638952" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#D90429',
+              darkred: '#9B0017',
+              yellow: '#FFB703',
+              gold: '#FB8500',
+              dark: '#0B1120',
+              card: '#151F32'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-red selection:text-white bg-pattern">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-brand-darkred via-brand-red to-brand-gold py-2 px-4 text-center text-xs sm:text-sm font-semibold text-white shadow-md relative z-50">
+    <div class="container mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="animate-pulse">🎉</span>
+      <span><strong>GRAND OPENING: 04/10/2026</strong> at Tondiarpet Market (Opp. Ragam Bakery)!</span>
+      <a href="#opening-offers" class="underline hover:text-amber-200 ml-1 font-bold">See Opening Day Specials →</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 bg-gradient-to-tr from-brand-red to-amber-500 rounded-2xl flex items-center justify-center shadow-lg shadow-red-950/60 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-drumstick-bite text-xl text-white"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="text-xl sm:text-2xl font-black tracking-tight text-white font-fredoka">Bk</span>
+            <span class="text-xl sm:text-2xl font-extrabold tracking-wider text-brand-yellow font-fredoka">BROASTED</span>
+          </div>
+          <div class="flex items-center gap-1 text-[11px] font-bold text-red-400 tracking-widest uppercase">
+            <span>KOZHI</span>
+            <span class="text-slate-500">•</span>
+            <span class="text-slate-300 font-normal">Tondiarpet</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#menu" class="hover:text-amber-400 transition-colors">Food Menu</a>
+        <a href="#opening-offers" class="hover:text-amber-400 transition-colors">Grand Offers</a>
+        <a href="#why-us" class="hover:text-amber-400 transition-colors">Why Bk Kozhi?</a>
+        <a href="#location" class="hover:text-amber-400 transition-colors">Location & Directions</a>
+        <a href="#invitation" class="hover:text-amber-400 transition-colors">Invitation</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Direct Phone CTA -->
+        <a 
+          href="tel:8015638952" 
+          class="hidden sm:inline-flex items-center gap-2 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-amber-400 px-3.5 py-2 rounded-xl text-xs font-bold transition-all"
+        >
+          <i class="fa-solid fa-phone-volume text-brand-red animate-bounce"></i>
+          <span>8015638952</span>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button 
+          onclick="toggleCartDrawer(true)"
+          class="relative bg-brand-red hover:bg-red-600 text-white p-2.5 sm:px-4 sm:py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-red-900/40 transition-all active:scale-95"
+        >
+          <i class="fa-solid fa-bag-shopping text-base"></i>
+          <span class="hidden sm:inline">My Tray</span>
+          <span class="cart-count-badge hidden absolute -top-2 -right-2 bg-brand-yellow text-slate-900 text-xs font-extrabold w-5 h-5 rounded-full items-center justify-center border-2 border-slate-900">
+            0
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24">
+    <!-- Glow backdrops -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 bg-red-950/80 border border-red-500/40 px-3.5 py-1.5 rounded-full text-xs font-bold text-red-300 shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+            <span>TONDIARPET'S CRUNCHIEST HOTSPOT</span>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white leading-tight font-fredoka">
+            Super Crispy & Juicy <br/>
+            <span class="text-gradient-red-yellow">Bk BROASTED KOZHI</span>
+          </h1>
+
+          <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Experience the genuine golden crunch! Made with 100% fresh chicken, pressure-fried with a 12-spice secret recipe for irresistible flavor and extreme tenderness.
+          </p>
+
+          <div class="p-3 bg-slate-800/80 border border-slate-700/80 rounded-2xl max-w-lg mx-auto lg:mx-0 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-location-dot text-lg"></i>
+            </div>
+            <div class="text-left text-xs sm:text-sm">
+              <div class="text-slate-200 font-semibold">Tondiarpet Market (Opp. Ragam Bakery)</div>
+              <div class="text-slate-400 text-xs">Old No 29/1 New No 71 Thandavaraya Gramani St, Chennai - 600081</div>
+            </div>
+          </div>
+
+          <!-- Live Opening Countdown Card -->
+          <div id="countdownSection" class="bg-gradient-to-br from-slate-900 via-slate-800 to-red-950/50 p-4 sm:p-5 rounded-2xl border border-red-500/30 max-w-lg mx-auto lg:mx-0 shadow-xl">
+            <div class="flex items-center justify-between mb-3 text-xs">
+              <span class="font-bold text-amber-400 flex items-center gap-1.5 uppercase tracking-wider">
+                <i class="fa-regular fa-calendar-check"></i> Grand Opening Countdown: 04/10/2026
+              </span>
+              <span class="bg-red-600/90 text-white px-2 py-0.5 rounded text-[10px] font-bold">Special Inauguration</span>
+            </div>
+
+            <div class="grid grid-cols-4 gap-2 sm:gap-3 text-center">
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-700">
+                <span id="cdDays" class="block text-2xl sm:text-3xl font-black text-white font-fredoka">00</span>
+                <span class="text-[10px] font-semibold text-slate-400 uppercase">Days</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-700">
+                <span id="cdHours" class="block text-2xl sm:text-3xl font-black text-white font-fredoka">00</span>
+                <span class="text-[10px] font-semibold text-slate-400 uppercase">Hours</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-700">
+                <span id="cdMins" class="block text-2xl sm:text-3xl font-black text-white font-fredoka">00</span>
+                <span class="text-[10px] font-semibold text-slate-400 uppercase">Minutes</span>
+              </div>
+              <div class="bg-slate-900/90 p-2.5 rounded-xl border border-slate-700">
+                <span id="cdSecs" class="block text-2xl sm:text-3xl font-black text-amber-400 font-fredoka">00</span>
+                <span class="text-[10px] font-semibold text-slate-400 uppercase">Seconds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+            <a 
+              href="#menu" 
+              class="bg-brand-red hover:bg-red-600 text-white font-bold px-6 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-xl shadow-red-900/50 hover:shadow-red-800/80 transition-all hover:scale-105 active:scale-95"
+            >
+              <i class="fa-solid fa-utensils"></i>
+              <span>Order Food Menu</span>
+            </a>
+
+            <a 
+              href="https://wa.me/918015638952?text=Hello%20Bk%20Broasted%20Kozhi,%20I%20would%20like%20to%20know%20more%20about%20your%20menu%20and%20opening%20offers!"
+              target="_blank"
+              class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-3.5 rounded-xl text-sm flex items-center gap-2 shadow-lg shadow-emerald-950/50 transition-all hover:scale-105 active:scale-95"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp Order</span>
+            </a>
+
+            <a 
+              href="tel:8015638952" 
+              class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-5 py-3.5 rounded-xl text-sm flex items-center gap-2 transition-all hover:text-white"
+            >
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>8015638952</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual / Poster Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative max-w-sm w-full">
+            
+            <!-- Glow under card -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-red-600 to-amber-500 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-glow"></div>
+
+            <div class="relative bg-slate-900 border-2 border-amber-500/50 rounded-3xl overflow-hidden shadow-2xl p-3">
+              <!-- Poster Image with Lightbox Trigger -->
+              <div class="relative rounded-2xl overflow-hidden cursor-pointer group" onclick="openPosterModal()">
+                <img 
+                  src="assets/poster.jpg" 
+                  alt="Bk Broasted Kozhi Opening Poster Tondiarpet" 
+                  class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-4">
+                  <div class="w-full flex items-center justify-between text-white">
+                    <div>
+                      <span class="text-xs bg-brand-red px-2 py-0.5 rounded font-bold">Official Poster</span>
+                      <p class="text-xs text-amber-300 font-semibold mt-1">Tap to enlarge Invitation</p>
+                    </div>
+                    <div class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
+                      <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating highlight badges -->
+              <div class="grid grid-cols-2 gap-2 mt-3 text-center">
+                <div class="bg-slate-800/90 border border-slate-700 p-2 rounded-xl">
+                  <div class="text-amber-400 font-bold text-xs"><i class="fa-solid fa-shield-halved"></i> 100% Halal</div>
+                  <div class="text-[10px] text-slate-400">Fresh & Hygienic</div>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-2 rounded-xl">
+                  <div class="text-red-400 font-bold text-xs"><i class="fa-solid fa-fire-burner"></i> Secret 12 Spices</div>
+                  <div class="text-[10px] text-slate-400">Extreme Crunch</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand Opening Offers Section -->
+  <section id="opening-offers" class="py-14 bg-slate-900/60 border-y border-slate-800 relative">
+    <div class="container mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+          Inaugural Celebration Offers
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 font-fredoka">
+          Grand Opening Specials <span class="text-brand-red">(04/10/2026)</span>
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          Celebrate with us in Tondiarpet! Enjoy unmatched discounts and special food combos on our launch week.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <!-- Offer 1 -->
+        <div class="bg-gradient-to-b from-red-950/60 to-slate-900 border border-red-500/40 rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between hover:scale-105 transition-transform">
+          <div class="absolute -top-3 -right-3 bg-brand-red text-white text-xs font-black px-4 py-2 rounded-bl-2xl shadow-lg">
+            DAY 1 ONLY
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-red-600/20 text-red-500 flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-percent"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Flat 20% OFF</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Get flat 20% discount on all Broasted Kozhi Buckets on October 4, 2026! Valid on dine-in and takeaway.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-amber-400 font-semibold">
+            <span>Coupon: <code class="bg-slate-800 px-2 py-0.5 rounded text-white">BKOPEN20</code></span>
+            <span>04/10/2026</span>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="bg-gradient-to-b from-amber-950/60 to-slate-900 border border-amber-500/40 rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between hover:scale-105 transition-transform">
+          <div class="absolute -top-3 -right-3 bg-amber-500 text-slate-900 text-xs font-black px-4 py-2 rounded-bl-2xl shadow-lg">
+            FREE TREAT
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Free Fries + Drink</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Buy any 4-Piece or 8-Piece Kozhi Bucket and get a Large French Fries + Blue Curacao Mojito completely FREE!
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-amber-400 font-semibold">
+            <span>Opening Week Deal</span>
+            <span>Worth ₹149 Free</span>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="bg-gradient-to-b from-blue-950/60 to-slate-900 border border-blue-500/40 rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between hover:scale-105 transition-transform">
+          <div class="absolute -top-3 -right-3 bg-blue-600 text-white text-xs font-black px-4 py-2 rounded-bl-2xl shadow-lg">
+            EARLY BIRD
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-2xl mb-4">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">First 50 Orders Gift</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              First 50 customers to visit our Tondiarpet store on Opening Day receive an exclusive Bk VIP Card + Surprise Dessert.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-blue-300 font-semibold">
+            <span>Starts 10:00 AM</span>
+            <span>First Come First</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="py-16 relative">
+    <div class="container mx-auto px-4 sm:px-6">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-red bg-red-600/10 px-3 py-1 rounded-full border border-red-500/20">
+            Fresh & Crunchy Choices
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 font-fredoka">
+            Our Crave-Worthy Menu
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-1">
+            Pick your favorites and click <strong class="text-white">Add</strong> to build your WhatsApp order tray!
+          </p>
+        </div>
+
+        <!-- Quick Search or Note -->
+        <div class="flex items-center gap-2 text-xs text-slate-400 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+          <i class="fa-solid fa-motorcycle text-amber-400"></i>
+          <span>Door delivery available in & around Tondiarpet</span>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+        <button data-category="all" class="category-btn bg-red-600 text-white shadow-lg text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          <i class="fa-solid fa-border-all mr-1.5"></i> All Items
+        </button>
+        <button data-category="broasted" class="category-btn bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          🍗 Broasted Kozhi Buckets
+        </button>
+        <button data-category="burgers" class="category-btn bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          🍔 Burgers & Wraps
+        </button>
+        <button data-category="bites" class="category-btn bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          🍟 Wings, Fries & Bites
+        </button>
+        <button data-category="combos" class="category-btn bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          🍱 Feast Combos
+        </button>
+        <button data-category="beverages" class="category-btn bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs sm:text-sm font-bold px-5 py-2.5 rounded-xl transition-all whitespace-nowrap">
+          🥤 Mojitos & Coolers
+        </button>
+      </div>
+
+      <!-- Food Menu Grid (Dynamically rendered via js/app.js) -->
+      <div id="menuGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- JS renders items here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Bk Broasted Kozhi Section -->
+  <section id="why-us" class="py-16 bg-slate-900/80 border-t border-slate-800">
+    <div class="container mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-fredoka">
+          The Secret to Our Crunch
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          Why our broasted chicken tastes unmatched compared to regular deep-fried snacks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/80 text-center hover:border-red-500/50 transition-colors">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-red-600/20 text-red-500 flex items-center justify-center text-2xl mb-4">
+            🍗
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">100% Fresh Poultry</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Never frozen! We source farm-fresh, premium chicken daily to ensure max tenderness and natural juiciness.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/80 text-center hover:border-amber-500/50 transition-colors">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-4">
+            🌶️
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">12 Secret Spices</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Marinated for 12 hours in authentic herbs and spices that seep deep inside the meat for full flavor.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/80 text-center hover:border-blue-500/50 transition-colors">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-2xl mb-4">
+            ⏱️
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Pressure Broasted</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Specially pressure fried to lock in juices while keeping the outer coat feather-crisp and 50% less oily.
+          </p>
+        </div>
+
+        <div class="p-6 bg-slate-800/80 rounded-2xl border border-slate-700/80 text-center hover:border-emerald-500/50 transition-colors">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-2xl mb-4">
+            🕌
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">100% Halal & Clean</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Certified Halal prepared in a spotless open-hygiene kitchen following high food safety standards.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Official Invitation Message Section -->
+  <section id="invitation" class="py-14 bg-gradient-to-r from-red-950/40 via-slate-900 to-amber-950/40 border-t border-slate-800">
+    <div class="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
+      
+      <div class="bg-slate-900/90 border-2 border-red-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl relative">
+        <div class="text-4xl mb-3">💌</div>
+        
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Hearty Welcome</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-4 font-fredoka">
+          Dear Family, Friends & Food Lovers,
+        </h2>
+
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto italic">
+          "Please come to our shop opening day on <strong class="text-amber-400">04/10/2026</strong> and make it more special with your gracious presence and blessings. We look forward to celebrating this delicious new milestone with you all!"
+        </p>
+
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-slate-300">
+          <div class="flex items-center gap-2 bg-slate-800 px-3.5 py-2 rounded-xl">
+            <i class="fa-solid fa-calendar-day text-brand-red"></i> 04 October 2026 (Sunday)
+          </div>
+          <div class="flex items-center gap-2 bg-slate-800 px-3.5 py-2 rounded-xl">
+            <i class="fa-solid fa-clock text-amber-400"></i> Inauguration at 10:00 AM
+          </div>
+          <div class="flex items-center gap-2 bg-slate-800 px-3.5 py-2 rounded-xl">
+            <i class="fa-solid fa-phone text-emerald-400"></i> 8015638952
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <button 
+            onclick="openPosterModal()" 
+            class="bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/40 font-bold px-6 py-2.5 rounded-xl text-xs sm:text-sm inline-flex items-center gap-2 transition-all hover:scale-105"
+          >
+            <i class="fa-solid fa-image"></i> View Full Invitation Poster
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Landmark Guide Section -->
+  <section id="location" class="py-16 bg-slate-900/90 border-t border-slate-800">
+    <div class="container mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Address Details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+              Visit Us in Person
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-fredoka">
+              Find Bk Broasted Kozhi
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm mt-1">
+              Conveniently located in the heart of Tondiarpet Market for quick dine-in, takeaway, and fast home delivery.
+            </p>
+          </div>
+
+          <!-- Address Box -->
+          <div class="space-y-4">
+            
+            <div class="flex items-start gap-4 p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-red-600/20 text-brand-red flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 uppercase font-semibold">Store Address</div>
+                <p class="text-sm font-semibold text-white mt-0.5">
+                  Old No 29/1 New No 71, Thandavaraya Gramani Street, Tondiarpet, Chennai – 600081.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-store"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 uppercase font-semibold">Key Landmark</div>
+                <p class="text-sm font-semibold text-white mt-0.5">
+                  Directly Opposite Ragam Bakery, Tondiarpet Market.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400 uppercase font-semibold">Opening Hours</div>
+                <p class="text-sm font-semibold text-white mt-0.5">
+                  Monday – Sunday: 11:00 AM – 11:00 PM (All 7 Days)
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Action buttons for Directions -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a 
+              href="https://maps.google.com/?q=Thandavaraya+Gramani+Street+Tondiarpet+Chennai+600081" 
+              target="_blank"
+              class="bg-brand-red hover:bg-red-600 text-white font-bold px-5 py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 shadow-lg transition-all"
+            >
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Get Directions on Google Maps</span>
+            </a>
+
+            <a 
+              href="tel:8015638952" 
+              class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-bold px-5 py-3 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition-all"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>Call: 8015638952</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Embedded Interactive Map -->
+        <div class="lg:col-span-6">
+          <div class="bg-slate-800 p-3 rounded-3xl border border-slate-700 shadow-2xl overflow-hidden">
+            <div class="rounded-2xl overflow-hidden h-80 sm:h-96 w-full relative">
+              <iframe 
+                title="Bk Broasted Kozhi Location Map Tondiarpet"
+                src="https://maps.google.com/maps?q=Thandavaraya+Gramani+Street+Tondiarpet+Chennai+600081&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                class="w-full h-full border-0 grayscale-[20%] contrast-[110%]" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+              <div class="absolute bottom-3 left-3 right-3 bg-slate-900/90 backdrop-blur-md p-3 rounded-xl border border-slate-700 text-xs flex items-center justify-between">
+                <div>
+                  <div class="font-bold text-white">Bk Broasted Kozhi</div>
+                  <div class="text-slate-400 text-[11px]">Opp. Ragam Bakery, Tondiarpet Market</div>
+                </div>
+                <a 
+                  href="https://maps.google.com/?q=Thandavaraya+Gramani+Street+Tondiarpet+Chennai+600081" 
+                  target="_blank"
+                  class="bg-brand-red text-white font-bold px-3 py-1.5 rounded-lg text-[11px] hover:bg-red-700"
+                >
+                  Navigate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="container mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        
+        <!-- Col 1: Brand -->
+        <div class="space-y-3 md:col-span-2">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-black text-white font-fredoka">Bk</span>
+            <span class="text-2xl font-black text-brand-yellow font-fredoka">BROASTED KOZHI</span>
+          </div>
+          <p class="text-slate-400 max-w-sm leading-relaxed">
+            Your destination for authentic, mouth-watering crispy broasted chicken, loaded burgers, spicy wings, and delicious coolers in Tondiarpet, Chennai.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://wa.me/918015638952" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-emerald-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp text-sm"></i>
+            </a>
+            <a href="tel:8015638952" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-red-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-solid fa-phone text-xs"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3 font-fredoka">Quick Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="#menu" class="hover:text-amber-400 transition-colors">Food Menu & Combos</a></li>
+            <li><a href="#opening-offers" class="hover:text-amber-400 transition-colors">Grand Opening Deals</a></li>
+            <li><a href="#why-us" class="hover:text-amber-400 transition-colors">Our Secret Recipe</a></li>
+            <li><a href="#location" class="hover:text-amber-400 transition-colors">Store Map & Timings</a></li>
+            <li><a href="#invitation" class="hover:text-amber-400 transition-colors">Opening Invitation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details -->
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3 font-fredoka">Direct Order Line</h4>
+          <div class="space-y-2 text-slate-300">
+            <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+              <i class="fa-solid fa-phone"></i> 8015638952
+            </div>
+            <div>Old No 29/1 New No 71, Thandavaraya Gramani St, Tondiarpet, Chennai - 600081</div>
+            <div class="text-slate-400 text-[11px]">Opposite Ragam Bakery, Tondiarpet Market</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div>
+          © 2026 <strong>Bk BROASTED KOZHI</strong>. All Rights Reserved. Tondiarpet, Chennai.
+        </div>
+        <div class="flex gap-4">
+          <span class="text-emerald-400 font-medium">Grand Opening: 04/10/2026</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Slide-over Cart Drawer / WhatsApp Checkout Modal -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 hidden">
+    <!-- Backdrop -->
+    <div id="cartBackdrop" onclick="toggleCartDrawer(false)" class="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 drawer-backdrop"></div>
+
+    <!-- Drawer Content -->
+    <div id="cartDrawerContent" class="absolute top-0 right-0 h-full w-full max-w-md bg-slate-900 border-l border-slate-800 shadow-2xl flex flex-col justify-between translate-x-full drawer-content">
+      
+      <!-- Drawer Header -->
+      <div class="p-4 sm:p-5 border-b border-slate-800 flex items-center justify-between bg-slate-950">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-red-600/20 text-brand-red flex items-center justify-center">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-white text-base">Your Order Tray</h3>
+            <span class="text-[11px] text-slate-400">Bk Broasted Kozhi (Tondiarpet)</span>
+          </div>
+        </div>
+        <button onclick="toggleCartDrawer(false)" class="w-8 h-8 rounded-full bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Body: Items & Form -->
+      <div class="p-4 sm:p-5 overflow-y-auto flex-1 space-y-4">
+        
+        <!-- Empty State -->
+        <div id="cartEmptyState" class="text-center py-12 hidden">
+          <div class="text-5xl mb-3">🍗</div>
+          <h4 class="text-lg font-bold text-white">Your tray is empty</h4>
+          <p class="text-xs text-slate-400 mt-1 max-w-xs mx-auto">Explore our crispy broasted chicken and burgers to start an order!</p>
+          <button onclick="toggleCartDrawer(false)" class="mt-4 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-xl">
+            Browse Menu
+          </button>
+        </div>
+
+        <!-- Filled State -->
+        <div id="cartFilledState" class="space-y-4">
+          <!-- Cart items list -->
+          <div id="cartItemsList" class="space-y-2.5">
+            <!-- JS renders cart items here -->
+          </div>
+
+          <!-- Checkout Customer Info Form -->
+          <form id="waOrderForm" onsubmit="sendWhatsAppOrder(event)" class="mt-4 pt-4 border-t border-slate-800 space-y-3">
+            <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider">Customer Details</h4>
+            
+            <div>
+              <label class="block text-[11px] text-slate-300 font-medium mb-1">Your Name *</label>
+              <input 
+                type="text" 
+                id="orderCustName" 
+                required 
+                placeholder="e.g. Imran / Priya" 
+                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-red-500"
+              />
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-slate-300 font-medium mb-1">Mobile / WhatsApp Number *</label>
+              <input 
+                type="tel" 
+                id="orderCustPhone" 
+                required 
+                placeholder="e.g. 9876543210" 
+                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-red-500"
+              />
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-slate-300 font-medium mb-1">Order Type</label>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <label class="flex items-center justify-center p-2 bg-slate-800 border border-slate-700 rounded-xl cursor-pointer hover:border-red-500 has-[:checked]:bg-red-950/70 has-[:checked]:border-red-500 has-[:checked]:text-white text-slate-300">
+                  <input type="radio" name="orderType" value="Takeaway" checked class="hidden" />
+                  <span>Takeaway</span>
+                </label>
+                <label class="flex items-center justify-center p-2 bg-slate-800 border border-slate-700 rounded-xl cursor-pointer hover:border-red-500 has-[:checked]:bg-red-950/70 has-[:checked]:border-red-500 has-[:checked]:text-white text-slate-300">
+                  <input type="radio" name="orderType" value="Home Delivery" class="hidden" />
+                  <span>Delivery</span>
+                </label>
+                <label class="flex items-center justify-center p-2 bg-slate-800 border border-slate-700 rounded-xl cursor-pointer hover:border-red-500 has-[:checked]:bg-red-950/70 has-[:checked]:border-red-500 has-[:checked]:text-white text-slate-300">
+                  <input type="radio" name="orderType" value="Dine-In" class="hidden" />
+                  <span>Dine-In</span>
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-slate-300 font-medium mb-1">Delivery Address & Landmark (if delivery)</label>
+              <textarea 
+                id="orderCustAddress" 
+                rows="2" 
+                placeholder="Street name, Door no, Tondiarpet Landmark..." 
+                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-red-500"
+              ></textarea>
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-slate-300 font-medium mb-1">Special Instructions (Optional)</label>
+              <input 
+                type="text" 
+                id="orderCustNotes" 
+                placeholder="e.g. Extra spicy, extra garlic dip..." 
+                class="w-full bg-slate-800 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-red-500"
+              />
+            </div>
+
+            <!-- Bill Breakdown -->
+            <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Items Subtotal:</span>
+                <span id="cartSubtotal" class="text-white font-semibold">₹0</span>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Shop Location:</span>
+                <span class="text-amber-400 font-semibold">Tondiarpet Market</span>
+              </div>
+              <div class="pt-2 border-t border-slate-800 flex justify-between text-sm font-extrabold text-white">
+                <span>Estimated Total:</span>
+                <span id="cartTotal" class="text-brand-yellow font-black">₹0</span>
+              </div>
+            </div>
+
+            <!-- Submit WhatsApp Order Button -->
+            <button 
+              type="submit" 
+              class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/50 transition-all hover:scale-[1.02] active:scale-98"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Send Order to WhatsApp (8015638952)</span>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Full Poster Lightbox Modal -->
+  <div id="posterModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="relative max-w-xl w-full bg-slate-900 border border-slate-700 rounded-3xl p-3 shadow-2xl overflow-hidden animate-float">
+      <button 
+        onclick="closePosterModal()" 
+        class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/80 text-white hover:bg-red-600 flex items-center justify-center transition-colors"
+      >
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <img src="assets/poster.jpg" alt="Bk Broasted Kozhi Opening Poster" class="w-full h-auto rounded-2xl" />
+
+      <div class="p-3 text-center">
+        <div class="text-sm font-bold text-white">Bk BROASTED KOZHI - Grand Opening (04/10/2026)</div>
+        <div class="text-xs text-amber-400 mt-0.5">Tondiarpet Market (Opp. Ragam Bakery), Chennai - 600081 • Call: 8015638952</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Popup -->
+  <div id="toast" class="fixed bottom-20 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white border border-slate-700 px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs sm:text-sm font-bold transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <i class="fa-solid fa-circle-check text-amber-400"></i>
+    <span>Item added to tray</span>
+  </div>
+
+  <!-- Mobile Floating Sticky Bottom Quick Bar -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 p-2.5 px-4 flex items-center justify-between gap-2 shadow-2xl">
+    <a 
+      href="tel:8015638952" 
+      class="flex-1 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5"
+    >
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Us</span>
+    </a>
+    
+    <a 
+      href="https://wa.me/918015638952?text=Hello%20Bk%20Broasted%20Kozhi,%20I%20want%20to%20place%20an%20order!" 
+      target="_blank"
+      class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1.5"
+    >
+      <i class="fa-brands fa-whatsapp text-sm"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <button 
+      onclick="toggleCartDrawer(true)" 
+      class="bg-brand-red text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-lg shadow-red-900/50"
+    >
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span>Tray (<span class="cart-count-badge">0</span>)</span>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>
